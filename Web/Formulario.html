@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form action="processar.php" method="post">
+            <fieldset>
+                <legend>Dados Gerais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" minlength="3" id="nome" required/>
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="text" id="data_nascimento" required pattern="^[0-9]{2}/[0-9]{2}/[0-9]{4}$"/>
+        <label for="cpf">CPF:</label>
+        <input type="text" maxlength="14" id="cpf" required pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <label for="tipo_endereco">Tipo de Endereço:</label>
+        <select id="tipo_endereco" required>
+            <option value="">Selecione</option>
+            <option value="">Rua</option>
+            <option value="">estrada</option>
+            <option value="">Rodovia</option>
+            <option value="">Outros</option>
+        </select>
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" required/>
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" required/>
+        <label for="complemento">Complemento:</label>
+        <input type="text" id="complemento"/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Fale conosco</legend>
+        <label for="msg">Mensagem:</label>
+        <textarea type="text" id="msg"></textarea>
+    </fieldset>
+        
+    <fieldset>
+        <button type="submit">Enviar Mensagem</button>
+        <button type="reset">Limpar Formulário</button>
+    </fieldset>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body { 
+    background-color: #13131F;
+}
+h1 {
+    color: wheat;
+    text-align: center;
+}
+p {
+    color: purple;
+    margin-left: 10px;
+}
+#imagem_exemplo {
+    width: 100px;
+    text-align: center;
+}
+
+
